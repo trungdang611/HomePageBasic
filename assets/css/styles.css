@@ -1,13 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
 }
 
 .header {
@@ -22,6 +19,7 @@ body {
   justify-content: space-between;
   background-color: #ffffffff;
   box-shadow: 0px 0px 2px #171a1f12;
+  z-index: 999;
 }
 /* header */
 .header {
@@ -41,7 +39,7 @@ body {
         margin-right: 26px;
         color: #636ae8ff;
         font-size: 24px;
-        font-family: "Archivo";
+        font-family: "Archivo", sans-serif;
       }
     }
     .header-textbox {
@@ -140,12 +138,208 @@ body {
 
 .section-intro {
   .section-intro-bg {
+    display: flex;
+    align-items: center;
     margin-top: 80px;
     width: 100%;
     height: 90vh;
     background-image: url("../images/background-intro.jpg");
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
+    background-attachment: unset;
     background-size: cover;
+    .intro-content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items: center;
+      width: 413px;
+      height: 418px;
+      background: #ffffffff;
+      border-radius: 16px;
+      border-width: 1px;
+      border-color: #ea916eff;
+      border-style: dashed;
+      .intro-content-label {
+        position: absolute;
+        top: -18px;
+        right: 92px;
+        width: 229px;
+        height: 36px;
+        padding: 0 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 400;
+        color: #ffffffff;
+        background: #22ccb2ff;
+        border-radius: 6px;
+      }
+      .intro-content-title {
+        margin-bottom: 12px;
+        font-family: "Archivo", sans-serif;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 700;
+        color: #636ae8ff;
+      }
+      .intro-content-description {
+        margin-bottom: 55px;
+        width: 340px;
+        height: 88px;
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 400;
+        color: #171a1fff;
+        text-align: center;
+      }
+      .intro-info-author {
+        margin-bottom: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .intro-info-avatar {
+          margin-bottom: 8px;
+          width: 36px;
+          height: 36px;
+          overflow: hidden;
+          border-radius: 18px;
+          background: #ced0f8ff;
+        }
+        .intro-info-title {
+          margin-bottom: 24px;
+          font-size: 14px;
+          line-height: 22px;
+          font-weight: 600;
+          color: #565e6cff;
+        }
+        .intro-info-btn {
+          height: 46px;
+          padding: 0 12px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 14px;
+          line-height: 22px;
+          font-weight: 400;
+          color: #ffffffff;
+          background: #636ae8ff;
+          border: none;
+          border-radius: 16px;
+          gap: 6px;
+          cursor: pointer;
+        }
+        .intro-info-btn:hover {
+          background: #4850e4ff;
+        }
+        .intro-info-btn:active {
+          background: #2c35e0ff;
+        }
+      }
+    }
   }
+}
+
+.category {
+  .category-title,
+  .category-description {
+    text-align: center;
+  }
+
+  .category-title {
+    margin-bottom: 6px;
+    font-family: "Lora";
+    font-size: 40px;
+    line-height: 56px;
+    font-weight: 700;
+    color: #636ae8ff;
+  }
+  .category-description {
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #171a1fff;
+  }
+  .category-list {
+    display: grid;
+    .category-item {
+      height: 292px;
+      background: #ffffffff;
+      border-radius: 16px;
+      box-shadow: 0px 0px 2px #171a1f1f;
+      overflow: hidden;
+      .card-image {
+        height: 176px;
+        width: 100%;
+        border-bottom: 1px solid #bcc1caff;
+      }
+      .card-content {
+        padding: 16px 16px 12px;
+        display: flex;
+        align-items: start;
+        .card-title {
+          width: 197px;
+          height: 52px;
+          font-family: "Archivo", sans-serif;
+          font-size: 16px;
+          line-height: 26px;
+          font-weight: 600;
+          color: #171a1fff;
+        }
+        .card-bookmark {
+          margin-top: -5px;
+          margin-left: 3px;
+          width: 46px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #636ae8ff;
+          background: #ffffffff;
+          border-radius: 50%;
+          border: 1px solid #636ae8ff;
+          outline: none;
+          i {
+            font-size: 22px;
+            fill: #636ae8ff;
+          }
+        }
+      }
+      .card-tag {
+        margin: 0 16px 16px;
+        width: 68px;
+        height: 20px;
+        text-align: center;
+        font-size: 11px;
+        line-height: 18px;
+        font-weight: 400;
+        border-radius: 10px;
+        color: #636ae8ff;
+        background: #f2f2fdff;
+        border-color: #00000000;
+      }
+    }
+  }
+}
+
+/* common */
+.container {
+  margin: 0 106px;
+  padding: 64px 0;
+}
+
+.row-1 {
+  grid-template-columns: 270px 270px 270px 270px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row-2 {
+  grid-template-columns: 569px 569px;
+  gap: 36px;
 }
