@@ -585,6 +585,7 @@ footer {
       }
     }
     .modal-login-content {
+      position: relative;
       flex-grow: 1;
       padding: 32px;
       .login-content-title {
@@ -686,6 +687,14 @@ footer {
           border: none;
           border-radius: 6px;
         }
+      }
+      .login-content-close {
+        position: absolute;
+        top: 40px;
+        right: 30px;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
       }
     }
   }
