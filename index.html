@@ -10,377 +10,428 @@
     />
   </head>
   <body>
-    <header class="header">
-      <div class="header-block-left">
-        <div class="header-logo">
-          <img class="header-logo-img" src="./assets/images/logo.svg" alt="" />
-          <h2 class="header-logo-text">Chefify</h2>
+    <div class="main">
+      <header class="header">
+        <div class="header-block-left">
+          <div class="header-logo">
+            <img
+              class="header-logo-img"
+              src="./assets/images/logo.svg"
+              alt=""
+            />
+            <h2 class="header-logo-text">Chefify</h2>
+          </div>
+          <div class="header-textbox">
+            <i class="header-textbox-icon fa-solid fa-magnifying-glass"></i>
+            <input
+              type="text"
+              name=""
+              id="textbox"
+              placeholder="What would you like to cook?"
+            />
+          </div>
         </div>
-        <div class="header-textbox">
-          <i class="header-textbox-icon fa-solid fa-magnifying-glass"></i>
-          <input
-            type="text"
-            name=""
-            id="textbox"
-            placeholder="What would you like to cook?"
-          />
+        <div class="header-block-right">
+          <ul class="header-menu">
+            <li class="header-menu-item"><a href="">What to cook</a></li>
+            <li class="header-menu-item"><a href="">Recipes</a></li>
+            <li class="header-menu-item"><a href="">Ingredients</a></li>
+            <li class="header-menu-item"><a href="">Occasions</a></li>
+            <li class="header-menu-item"><a href="">About Us</a></li>
+          </ul>
+          <div class="header-actions">
+            <button class="header-actions-login">Login</button>
+            <button class="header-actions-subscribe">Subscribe</button>
+          </div>
         </div>
-      </div>
-      <div class="header-block-right">
-        <ul class="header-menu">
-          <li class="header-menu-item"><a href="">What to cook</a></li>
-          <li class="header-menu-item"><a href="">Recipes</a></li>
-          <li class="header-menu-item"><a href="">Ingredients</a></li>
-          <li class="header-menu-item"><a href="">Occasions</a></li>
-          <li class="header-menu-item"><a href="">About Us</a></li>
-        </ul>
-        <div class="header-actions">
-          <button class="header-actions-login">Login</button>
-          <button class="header-actions-subscribe">Subscribe</button>
+      </header>
+      <section class="section-intro">
+        <div class="section-intro-bg">
+          <div class="container">
+            <div class="intro-content">
+              <p class="intro-content-label">Recipe of the day</p>
+              <h3 class="intro-content-title">Salad Caprese</h3>
+              <p class="intro-content-description">
+                Classic Italian Salad Caprese: ripe tomatoes, fresh mozzarella,
+                herbs, olive oil, and balsamic vinegar create a refreshing dish
+                for lunch or appetizer.
+              </p>
+              <div class="intro-info-author">
+                <img
+                  class="intro-info-avatar"
+                  src="./assets/images/author-intro.jpg"
+                  alt=""
+                />
+                <p class="intro-info-title">Salad Caprese</p>
+                <button class="intro-info-btn">
+                  View now
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      d="M334.5 414c8.8 3.8 19 2 26-4.6l144-136c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22l0 72L32 192c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l288 0 0 72c0 9.6 5.7 18.2 14.5 22z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </header>
-    <section class="section-intro">
-      <div class="section-intro-bg">
+      </section>
+      <section class="category">
         <div class="container">
-          <div class="intro-content">
-            <p class="intro-content-label">Recipe of the day</p>
-            <h3 class="intro-content-title">Salad Caprese</h3>
-            <p class="intro-content-description">
-              Classic Italian Salad Caprese: ripe tomatoes, fresh mozzarella,
-              herbs, olive oil, and balsamic vinegar create a refreshing dish
-              for lunch or appetizer.
-            </p>
-            <div class="intro-info-author">
-              <img
-                class="intro-info-avatar"
-                src="./assets/images/author-intro.jpg"
-                alt=""
-              />
-              <p class="intro-info-title">Salad Caprese</p>
-              <button class="intro-info-btn">
-                View now
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                  <path
-                    d="M334.5 414c8.8 3.8 19 2 26-4.6l144-136c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22l0 72L32 192c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l288 0 0 72c0 9.6 5.7 18.2 14.5 22z"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="category">
-      <div class="container">
-        <h2 class="category-title">This Summer Recipes</h2>
-        <p class="category-description">
-          We have all your Independence Day sweets covered.
-        </p>
-        <div class="category-list row-1">
-          <div class="category-item">
-            <img
-              src="./assets/images/card-image-1.jpg"
-              alt="Italian-style tomato salad"
-              class="card-image"
-            />
-            <div class="card-content">
-              <h3 class="card-title">Italian-style tomato salad</h3>
-              <button class="card-bookmark">
-                <i class="fa-regular fa-bookmark"></i>
-              </button>
-            </div>
-            <p class="card-tag">14 minutes</p>
-          </div>
-          <div class="category-item">
-            <img
-              src="./assets/images/card-image-2.jpg"
-              alt="Italian-style tomato salad"
-              class="card-image"
-            />
-            <div class="card-content">
-              <h3 class="card-title">Spaghetti with vegetables and shrimp</h3>
-              <button class="card-bookmark">
-                <i class="fa-regular fa-bookmark"></i>
-              </button>
-            </div>
-            <p class="card-tag">15 minutes</p>
-          </div>
-          <div class="category-item">
-            <img
-              src="./assets/images/card-image-3.jpg"
-              alt="Italian-style tomato salad"
-              class="card-image"
-            />
-            <div class="card-content">
-              <h3 class="card-title">Lotus delight salad</h3>
-              <button class="card-bookmark">
-                <i class="fa-regular fa-bookmark"></i>
-              </button>
-            </div>
-            <p class="card-tag">20 minutes</p>
-          </div>
-          <div class="category-item">
-            <img
-              src="./assets/images/card-image-4.jpg"
-              alt="Italian-style tomato salad"
-              class="card-image"
-            />
-            <div class="card-content">
-              <h3 class="card-title">Snack cakes</h3>
-              <button class="card-bookmark">
-                <i class="fa-regular fa-bookmark"></i>
-              </button>
-            </div>
-            <p class="card-tag">21 minutes</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="category">
-      <div class="container">
-        <h2 class="category-title">Recipes With Videos</h2>
-        <p class="category-description">
-          Cooking Up Culinary Creations with Step-by-Step Videos
-        </p>
-        <div class="category-list row-1">
-          <div class="category-item">
-            <img
-              src="./assets/images/card-image-5.jpg"
-              alt="Italian-style tomato salad"
-              class="card-image"
-            />
-            <div class="card-content">
-              <h3 class="card-title">Salad with cabbage and shrimp</h3>
-              <button class="card-bookmark">
-                <i class="fa-regular fa-bookmark"></i>
-              </button>
-            </div>
-            <p class="card-tag">32 minutes</p>
-          </div>
-          <div class="category-item">
-            <img
-              src="./assets/images/card-image-6.jpg"
-              alt="Italian-style tomato salad"
-              class="card-image"
-            />
-            <div class="card-content">
-              <h3 class="card-title">
-                Salad of cove beans, shrimp and potatoes
-              </h3>
-              <button class="card-bookmark">
-                <i class="fa-regular fa-bookmark"></i>
-              </button>
-            </div>
-            <p class="card-tag">20 minutes</p>
-          </div>
-          <div class="category-item">
-            <img
-              src="./assets/images/card-image-7.jpg"
-              alt="Italian-style tomato salad"
-              class="card-image"
-            />
-            <div class="card-content">
-              <h3 class="card-title">Sunny-side up fried eggs</h3>
-              <button class="card-bookmark">
-                <i class="fa-regular fa-bookmark"></i>
-              </button>
-            </div>
-            <p class="card-tag">15 minutes</p>
-          </div>
-          <div class="category-item">
-            <img
-              src="./assets/images/card-image-8.jpg"
-              alt="Italian-style tomato salad"
-              class="card-image"
-            />
-            <div class="card-content">
-              <h3 class="card-title">Lotus delight salad</h3>
-              <button class="card-bookmark">
-                <i class="fa-regular fa-bookmark"></i>
-              </button>
-            </div>
-            <p class="card-tag">20 minutes</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="category">
-      <div class="container">
-        <h2 class="category-title">Editor's pick</h2>
-        <p class="category-description">
-          Curated Culinary Delights: Handpicked Favorites by Our Expert Editors!
-        </p>
-        <div class="category-list row-2">
-          <div class="category-item category-item-col-2">
-            <img
-              src="./assets/images/card-image-9.jpg"
-              alt="Italian-style tomato salad"
-              class="card-image"
-            />
-            <div class="card-content">
-              <h3 class="card-title">Stuffed sticky rice ball</h3>
-              <p class="card-tag">34 minutes</p>
-              <button class="card-bookmark">
-                <i class="fa-regular fa-bookmark"></i>
-              </button>
-              <div class="card-avatar">
-                <img src="./assets/images/author-category1.jpg" alt="" />
-                <p>Jennifer King</p>
-              </div>
-              <p class="card-description">
-                Stuffed sticky rice balls: A delightful Asian treat with chewy,
-                glutinous rice and a flavorful surprise filling...
-              </p>
-            </div>
-          </div>
-          <div class="category-item category-item-col-2">
-            <img
-              src="./assets/images/card-image-10.jpg"
-              alt="Italian-style tomato salad"
-              class="card-image"
-            />
-            <div class="card-content">
-              <h3 class="card-title">Strawberry smoothie</h3>
-              <p class="card-tag">40 minutes</p>
-              <button class="card-bookmark">
-                <i class="fa-regular fa-bookmark"></i>
-              </button>
-              <div class="card-avatar">
-                <img
-                  class="bg-violet"
-                  src="./assets/images/author-category2.jpg"
-                  alt=""
-                />
-                <p>Matthew Martinez</p>
-              </div>
-              <p class="card-description">
-                Savor the refreshing delight of a strawberry smoothie. Made with
-                ripe strawberries, this creamy blend offers...
-              </p>
-            </div>
-          </div>
-          <div class="category-item category-item-col-2">
-            <img
-              src="./assets/images/card-image-11.jpg"
-              alt="Italian-style tomato salad"
-              class="card-image"
-            />
-            <div class="card-content">
-              <h3 class="card-title">Latte Art</h3>
-              <p class="card-tag">19 minutes</p>
-              <button class="card-bookmark">
-                <i class="fa-regular fa-bookmark"></i>
-              </button>
-              <div class="card-avatar">
-                <img
-                  class="bg-cyan"
-                  src="./assets/images/author-category3.jpg"
-                  alt=""
-                />
-                <p>Sarah Hill</p>
-              </div>
-              <p class="card-description">
-                Latte art is the skillful craft of creating captivating designs
-                on the surface of a latte...
-              </p>
-            </div>
-          </div>
-          <div class="category-item category-item-col-2">
-            <img
-              src="./assets/images/card-image-12.jpg"
-              alt="Italian-style tomato salad"
-              class="card-image"
-            />
-            <div class="card-content">
-              <h3 class="card-title">Butter fried noodles</h3>
-              <p class="card-tag">16 minutes</p>
-              <button class="card-bookmark">
-                <i class="fa-regular fa-bookmark"></i>
-              </button>
-              <div class="card-avatar">
-                <img
-                  class="bg-pink"
-                  src="./assets/images/author-category1.jpg"
-                  alt=""
-                />
-                <p>Julia Lopez</p>
-              </div>
-              <p class="card-description">
-                Butter fried noodles: Savory noodles cooked in butter for a
-                delicious and satisfying meal...
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer class="footer">
-      <div class="footer-left">
-        <div class="footer-section">
-          <h4 class="footer-title">About Us</h4>
-          <p class="footer-text">
-            Welcome to our website, a wonderful place to explore and learn how
-            to cook like a pro.
+          <h2 class="category-title">This Summer Recipes</h2>
+          <p class="category-description">
+            We have all your Independence Day sweets covered.
           </p>
-          <div class="footer-subscribe">
+          <div class="category-list row-1">
+            <div class="category-item">
+              <img
+                src="./assets/images/card-image-1.jpg"
+                alt="Italian-style tomato salad"
+                class="card-image"
+              />
+              <div class="card-content">
+                <h3 class="card-title">Italian-style tomato salad</h3>
+                <button class="card-bookmark">
+                  <i class="fa-regular fa-bookmark"></i>
+                </button>
+              </div>
+              <p class="card-tag">14 minutes</p>
+            </div>
+            <div class="category-item">
+              <img
+                src="./assets/images/card-image-2.jpg"
+                alt="Italian-style tomato salad"
+                class="card-image"
+              />
+              <div class="card-content">
+                <h3 class="card-title">Spaghetti with vegetables and shrimp</h3>
+                <button class="card-bookmark">
+                  <i class="fa-regular fa-bookmark"></i>
+                </button>
+              </div>
+              <p class="card-tag">15 minutes</p>
+            </div>
+            <div class="category-item">
+              <img
+                src="./assets/images/card-image-3.jpg"
+                alt="Italian-style tomato salad"
+                class="card-image"
+              />
+              <div class="card-content">
+                <h3 class="card-title">Lotus delight salad</h3>
+                <button class="card-bookmark">
+                  <i class="fa-regular fa-bookmark"></i>
+                </button>
+              </div>
+              <p class="card-tag">20 minutes</p>
+            </div>
+            <div class="category-item">
+              <img
+                src="./assets/images/card-image-4.jpg"
+                alt="Italian-style tomato salad"
+                class="card-image"
+              />
+              <div class="card-content">
+                <h3 class="card-title">Snack cakes</h3>
+                <button class="card-bookmark">
+                  <i class="fa-regular fa-bookmark"></i>
+                </button>
+              </div>
+              <p class="card-tag">21 minutes</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="category">
+        <div class="container">
+          <h2 class="category-title">Recipes With Videos</h2>
+          <p class="category-description">
+            Cooking Up Culinary Creations with Step-by-Step Videos
+          </p>
+          <div class="category-list row-1">
+            <div class="category-item">
+              <img
+                src="./assets/images/card-image-5.jpg"
+                alt="Italian-style tomato salad"
+                class="card-image"
+              />
+              <div class="card-content">
+                <h3 class="card-title">Salad with cabbage and shrimp</h3>
+                <button class="card-bookmark">
+                  <i class="fa-regular fa-bookmark"></i>
+                </button>
+              </div>
+              <p class="card-tag">32 minutes</p>
+            </div>
+            <div class="category-item">
+              <img
+                src="./assets/images/card-image-6.jpg"
+                alt="Italian-style tomato salad"
+                class="card-image"
+              />
+              <div class="card-content">
+                <h3 class="card-title">
+                  Salad of cove beans, shrimp and potatoes
+                </h3>
+                <button class="card-bookmark">
+                  <i class="fa-regular fa-bookmark"></i>
+                </button>
+              </div>
+              <p class="card-tag">20 minutes</p>
+            </div>
+            <div class="category-item">
+              <img
+                src="./assets/images/card-image-7.jpg"
+                alt="Italian-style tomato salad"
+                class="card-image"
+              />
+              <div class="card-content">
+                <h3 class="card-title">Sunny-side up fried eggs</h3>
+                <button class="card-bookmark">
+                  <i class="fa-regular fa-bookmark"></i>
+                </button>
+              </div>
+              <p class="card-tag">15 minutes</p>
+            </div>
+            <div class="category-item">
+              <img
+                src="./assets/images/card-image-8.jpg"
+                alt="Italian-style tomato salad"
+                class="card-image"
+              />
+              <div class="card-content">
+                <h3 class="card-title">Lotus delight salad</h3>
+                <button class="card-bookmark">
+                  <i class="fa-regular fa-bookmark"></i>
+                </button>
+              </div>
+              <p class="card-tag">20 minutes</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="category">
+        <div class="container">
+          <h2 class="category-title">Editor's pick</h2>
+          <p class="category-description">
+            Curated Culinary Delights: Handpicked Favorites by Our Expert
+            Editors!
+          </p>
+          <div class="category-list row-2">
+            <div class="category-item category-item-col-2">
+              <img
+                src="./assets/images/card-image-9.jpg"
+                alt="Italian-style tomato salad"
+                class="card-image"
+              />
+              <div class="card-content">
+                <h3 class="card-title">Stuffed sticky rice ball</h3>
+                <p class="card-tag">34 minutes</p>
+                <button class="card-bookmark">
+                  <i class="fa-regular fa-bookmark"></i>
+                </button>
+                <div class="card-avatar">
+                  <img src="./assets/images/author-category1.jpg" alt="" />
+                  <p>Jennifer King</p>
+                </div>
+                <p class="card-description">
+                  Stuffed sticky rice balls: A delightful Asian treat with
+                  chewy, glutinous rice and a flavorful surprise filling...
+                </p>
+              </div>
+            </div>
+            <div class="category-item category-item-col-2">
+              <img
+                src="./assets/images/card-image-10.jpg"
+                alt="Italian-style tomato salad"
+                class="card-image"
+              />
+              <div class="card-content">
+                <h3 class="card-title">Strawberry smoothie</h3>
+                <p class="card-tag">40 minutes</p>
+                <button class="card-bookmark">
+                  <i class="fa-regular fa-bookmark"></i>
+                </button>
+                <div class="card-avatar">
+                  <img
+                    class="bg-violet"
+                    src="./assets/images/author-category2.jpg"
+                    alt=""
+                  />
+                  <p>Matthew Martinez</p>
+                </div>
+                <p class="card-description">
+                  Savor the refreshing delight of a strawberry smoothie. Made
+                  with ripe strawberries, this creamy blend offers...
+                </p>
+              </div>
+            </div>
+            <div class="category-item category-item-col-2">
+              <img
+                src="./assets/images/card-image-11.jpg"
+                alt="Italian-style tomato salad"
+                class="card-image"
+              />
+              <div class="card-content">
+                <h3 class="card-title">Latte Art</h3>
+                <p class="card-tag">19 minutes</p>
+                <button class="card-bookmark">
+                  <i class="fa-regular fa-bookmark"></i>
+                </button>
+                <div class="card-avatar">
+                  <img
+                    class="bg-cyan"
+                    src="./assets/images/author-category3.jpg"
+                    alt=""
+                  />
+                  <p>Sarah Hill</p>
+                </div>
+                <p class="card-description">
+                  Latte art is the skillful craft of creating captivating
+                  designs on the surface of a latte...
+                </p>
+              </div>
+            </div>
+            <div class="category-item category-item-col-2">
+              <img
+                src="./assets/images/card-image-12.jpg"
+                alt="Italian-style tomato salad"
+                class="card-image"
+              />
+              <div class="card-content">
+                <h3 class="card-title">Butter fried noodles</h3>
+                <p class="card-tag">16 minutes</p>
+                <button class="card-bookmark">
+                  <i class="fa-regular fa-bookmark"></i>
+                </button>
+                <div class="card-avatar">
+                  <img
+                    class="bg-pink"
+                    src="./assets/images/author-category1.jpg"
+                    alt=""
+                  />
+                  <p>Julia Lopez</p>
+                </div>
+                <p class="card-description">
+                  Butter fried noodles: Savory noodles cooked in butter for a
+                  delicious and satisfying meal...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer-left">
+          <div class="footer-section">
+            <h4 class="footer-title">About Us</h4>
+            <p class="footer-text">
+              Welcome to our website, a wonderful place to explore and learn how
+              to cook like a pro.
+            </p>
+            <div class="footer-subscribe">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="footer-input"
+              />
+              <button class="footer-button">Send</button>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4 class="footer-title">Learn More</h4>
+            <ul class="footer-list">
+              <li><a href="#" class="footer-link">Our Cooks</a></li>
+              <li><a href="#" class="footer-link">See Our Features</a></li>
+              <li><a href="#" class="footer-link">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-bottom">
+            <div class="footer-brand">
+              <a href="">
+                <img
+                  src="./assets/images/logo-footer.svg"
+                  alt="Chefify Logo"
+                  class="footer-logo"
+                />
+                <span>Chefify</span>
+              </a>
+            </div>
+            <ul class="footer-policies">
+              <li>
+                <a href="#" class="footer-policy">© 2023 Chefify Company</a>
+              </li>
+              <li>
+                <a href="#" class="footer-policy">Terms of Service</a>
+              </li>
+              <li><a href="#" class="footer-policy">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4 class="footer-title">Shop</h4>
+            <ul class="footer-list">
+              <li><a href="#" class="footer-link">Gift Subscription</a></li>
+              <li><a href="#" class="footer-link">Send Us Feedback</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-right footer-section">
+          <h4 class="footer-title">Recipes</h4>
+          <ul class="footer-list">
+            <li><a href="#" class="footer-link">What to Cook This Week</a></li>
+            <li><a href="#" class="footer-link">Pasta</a></li>
+            <li><a href="#" class="footer-link">Dinner</a></li>
+            <li><a href="#" class="footer-link">Healthy</a></li>
+            <li><a href="#" class="footer-link">Vegetarian</a></li>
+            <li><a href="#" class="footer-link">Vegan</a></li>
+            <li><a href="#" class="footer-link">Christmas</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <section class="modal-section">
+      <form action="" method="" class="modal-login">
+        <div class="modal-login-img">
+          <p class="modal-login-img-description">
+            "Embrace the art of cooking, where flavors come alive!"
+          </p>
+          <img src="./assets/images/modal-login-bg.jpg" alt="" />
+        </div>
+        <div class="modal-login-content">
+          <h2 class="login-content-title">Login</h2>
+          <p class="login-content-description">Enter your email to log in</p>
+          <label for="email">
             <input
               type="email"
+              id="email"
+              name="email"
               placeholder="Enter your email"
-              class="footer-input"
             />
-            <button class="footer-button">Send</button>
-          </div>
-        </div>
-        <div class="footer-section">
-          <h4 class="footer-title">Learn More</h4>
-          <ul class="footer-list">
-            <li><a href="#" class="footer-link">Our Cooks</a></li>
-            <li><a href="#" class="footer-link">See Our Features</a></li>
-            <li><a href="#" class="footer-link">FAQ</a></li>
-          </ul>
-        </div>
-        <div class="footer-bottom">
-          <div class="footer-brand">
-            <a href="">
-              <img
-                src="./assets/images/logo-footer.svg"
-                alt="Chefify Logo"
-                class="footer-logo"
-              />
-              <span>Chefify</span>
+          </label>
+          <button type="submit">Continue</button>
+          <p class="login-content-separate">OR</p>
+          <p class="login-content-term">
+            By continuing, you agree to the updated
+            <a href="">Terms of Sale</a>, <a href="">Terms of Service</a>, and
+            <a href="">Privacy Policy</a>.
+          </p>
+          <div class="login-content-social">
+            <a class="color-red" href="">
+              <i class="fa-solid fa-g"></i>
+              Continue with Google
+            </a>
+            <a class="color-blue" href="">
+              <i class="fa-brands fa-facebook"></i>
+              Continue with Facebook
+            </a>
+            <a class="color-black" href="">
+              <i class="fa-brands fa-apple"></i>
+              Continue with Apple
             </a>
           </div>
-          <ul class="footer-policies">
-            <li>
-              <a href="#" class="footer-policy">© 2023 Chefify Company</a>
-            </li>
-            <li>
-              <a href="#" class="footer-policy">Terms of Service</a>
-            </li>
-            <li><a href="#" class="footer-policy">Privacy Policy</a></li>
-          </ul>
         </div>
-        <div class="footer-section">
-          <h4 class="footer-title">Shop</h4>
-          <ul class="footer-list">
-            <li><a href="#" class="footer-link">Gift Subscription</a></li>
-            <li><a href="#" class="footer-link">Send Us Feedback</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-right footer-section">
-        <h4 class="footer-title">Recipes</h4>
-        <ul class="footer-list">
-          <li><a href="#" class="footer-link">What to Cook This Week</a></li>
-          <li><a href="#" class="footer-link">Pasta</a></li>
-          <li><a href="#" class="footer-link">Dinner</a></li>
-          <li><a href="#" class="footer-link">Healthy</a></li>
-          <li><a href="#" class="footer-link">Vegetarian</a></li>
-          <li><a href="#" class="footer-link">Vegan</a></li>
-          <li><a href="#" class="footer-link">Christmas</a></li>
-        </ul>
-      </div>
-    </footer>
+      </form>
+    </section>
   </body>
+  <script src="./js/main.js"></script>
 </html>
