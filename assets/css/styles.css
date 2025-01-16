@@ -554,7 +554,7 @@ footer {
   background-color: #171a1f66;
   z-index: 999;
   .modal-login {
-    display: flex;
+    display: none;
     width: 1139px;
     height: 624px;
     background: #ffffffff;
@@ -698,6 +698,124 @@ footer {
       }
     }
   }
+
+  .modal-login.active {
+    display: flex;
+  }
+
+  .modal-discover {
+    position: relative;
+    padding: 64px 0;
+    width: 824px;
+    height: 811px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffffff;
+    border-radius: 16px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    .modal-discover-tilte {
+      margin-bottom: 16px;
+      font-family: "Archivo", sans-serif;
+      font-size: 40px;
+      line-height: 56px;
+      font-weight: 700;
+      color: #636ae8ff;
+    }
+
+    .modal-discover-description {
+      margin-bottom: 24px;
+      font-size: 14px;
+      line-height: 22px;
+      font-weight: 400;
+      color: #171a1fff;
+    }
+
+    .modal-discover-img {
+      margin-bottom: 16px;
+      width: 775px;
+      height: 423px;
+      border-radius: 16px;
+    }
+
+    .modal-discover-dots {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background: #dee1e6ff;
+      border-radius: 50%;
+    }
+    .modal-discover-dots.active {
+      background: #636ae8ff;
+    }
+
+    .modal-discover-next {
+      margin: 38px 0 16px;
+      width: 362px;
+      height: 44px;
+      font-size: 16px;
+      line-height: 26px;
+      font-weight: 400;
+      color: #ffffffff;
+      background: #636ae8ff;
+      opacity: 1;
+      border: none;
+      border-radius: 16px;
+      cursor: pointer;
+    }
+
+    .modal-discover-next:hover {
+      color: #ffffffff;
+      background: #4850e4ff;
+    }
+
+    .modal-discover-next:active {
+      color: #ffffffff;
+      background: #2c35e0ff;
+    }
+
+    .modal-discover-skip {
+      width: 362px;
+      height: 48px;
+      font-size: 14px;
+      line-height: 22px;
+      font-weight: 400;
+      color: #636ae8ff;
+      background-color: #00000000;
+      opacity: 1;
+      border: none;
+      border-radius: 16px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      color: #636ae8ff;
+      background: #e0e1faff;
+    }
+
+    .button:hover:active {
+      color: #636ae8ff;
+      background: #ced0f8ff;
+    }
+
+    .modal-discover-close {
+      position: absolute;
+      right: 24px;
+      top: 24px;
+      width: 32px;
+      height: 32px;
+      fill: #171a1fff;
+      cursor: pointer;
+    }
+  }
+
+  .modal-discover.active {
+    display: flex;
+  }
+}
+
+.modal-section.active {
+  display: flex;
 }
 
 /* common */
