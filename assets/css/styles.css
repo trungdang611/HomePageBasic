@@ -129,6 +129,44 @@
         background: #2c35e0ff;
       }
     }
+    .header-user {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      .header-user-recipe-box {
+        padding: 0 16px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Inter" sans-serif;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+        color: #636ae8ff;
+        background: #f2f2fdff;
+        opacity: 1;
+        border: none;
+        border-radius: 16px;
+        gap: 6px;
+        cursor: pointer;
+      }
+      .header-user-recipe-box:hover {
+        background: #e0e1faff;
+      }
+      .header-user-recipe-box:active {
+        background: #ced0f8ff;
+      }
+
+      .header-user-recipe-avatar {
+        width: 44px;
+        height: 44px;
+        background: #ced0f8ff;
+        opacity: 1;
+        overflow: hidden;
+        border-radius: 22px;
+      }
+    }
   }
 }
 
@@ -406,9 +444,54 @@
   }
 }
 
+.section-search-box {
+  display: flex;
+  gap: 40px;
+  margin-top: 80px;
+  width: 100vw;
+  height: 1234px;
+  background: #ffffffff;
+  .search-filter {
+    padding: 19px 16px;
+    width: 336px;
+    height: 825px;
+    background: #ffffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1f;
+    .search-filter-header {
+      margin-bottom: 40px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      .search-filter-menu-icon {
+        width: 24px;
+        height: 24px;
+        fill: #171a1fff;
+      }
+      .search-filter-title {
+        font-family: "Archivo", sans-serif;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 700;
+        color: #171a1fff;
+      }
+    }
+  }
+  .search-content {
+    .search-content-title {
+      font-family: "Archivo", sans-serif; /* Heading */
+      font-size: 32px;
+      line-height: 48px;
+      font-weight: 700;
+      color: #171a1fff;
+    }
+  }
+}
+
 /* General Footer Styles */
 
 footer {
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   gap: 250px;
@@ -820,7 +903,8 @@ footer {
 
 /* common */
 .container {
-  margin: 0 123px;
+  margin-left: 123px;
+  margin-right: 123px;
   padding: 64px 0;
 }
 
