@@ -3,29 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <title>Home Page Basic</title>
-    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/styles.css" /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        font-size: 16px;
+        font-family: "Inter", sans-serif;
+      }
+
+      .font-family-Archivo {
+        font-family: "Archivo", sans-serif;
+      }
+
+      .primary-500 {
+        color: #636ae8ff;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <div class="main">
-      <header class="header">
-        <div class="header-block-left">
-          <div class="header-logo">
+      <header
+        class="container mx-auto h-20 flex justify-between grow-0 shrink-0"
+      >
+        <div class="flex justify-center items-center gap-[1.625rem]">
+          <div class="flex justify-center items-center gap-4">
             <img
-              class="header-logo-img"
+              class="w-[2.625rem] h-[2.625rem]"
               src="./assets/images/logo.svg"
               alt=""
             />
-            <h2 class="header-logo-text">Chefify</h2>
+            <h2
+              class="header-logo-text font-family-Archivo text-2xl font-bold primary-500"
+            >
+              Chefify
+            </h2>
           </div>
-          <div class="header-textbox">
-            <i class="header-textbox-icon fa-solid fa-magnifying-glass"></i>
+          <div
+            class="flex items-center gap-2 bg-[#F3F4F6FF] w-[23.375rem] h-11 rounded-2xl"
+          >
+            <i class="ml-2 fa-solid fa-magnifying-glass"></i>
             <input
               type="text"
               name=""
+              class="border-none outline-none text-base w-full bg-[#F3F4F6FF]"
               id="textbox"
               placeholder="What would you like to cook?"
             />
