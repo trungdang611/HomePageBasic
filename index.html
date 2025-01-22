@@ -24,6 +24,10 @@
         font-family: "Archivo", sans-serif;
       }
 
+      .font-family-Lora {
+        font-family: "Lora", sans-serif;
+      }
+
       .primary-500 {
         color: #636ae8ff;
       }
@@ -32,143 +36,250 @@
   </head>
   <body>
     <div class="main">
-      <header
-        class="container mx-auto h-20 flex justify-between grow-0 shrink-0"
-      >
-        <div class="flex justify-center items-center gap-[1.625rem]">
-          <div class="flex justify-center items-center gap-4">
-            <img
-              class="w-[2.625rem] h-[2.625rem]"
-              src="./assets/images/logo.svg"
-              alt=""
-            />
-            <h2
-              class="header-logo-text font-family-Archivo text-2xl font-bold primary-500"
+      <header class="fixed top-0 left-0 right-0 bg-[#FFFFFFFF] z-50 shadow-sm">
+        <div
+          class="container mx-auto h-20 flex justify-between grow-0 shrink-0"
+        >
+          <div class="flex justify-center items-center gap-[1.625rem]">
+            <div class="flex justify-center items-center gap-4">
+              <img
+                class="w-[2.625rem] h-[2.625rem]"
+                src="./assets/images/logo.svg"
+                alt=""
+              />
+              <h2
+                class="header-logo-text font-family-Archivo text-2xl font-bold primary-500"
+              >
+                Chefify
+              </h2>
+            </div>
+            <div
+              class="flex items-center gap-3 bg-[#F3F4F6FF] w-[23.375rem] h-11 rounded-2xl"
             >
-              Chefify
-            </h2>
+              <i class="ml-4 fa-solid fa-magnifying-glass"></i>
+              <input
+                type="text"
+                name=""
+                class="border-none outline-none text-base w-full bg-[#F3F4F6FF]"
+                id="textbox"
+                placeholder="What would you like to cook?"
+              />
+            </div>
           </div>
-          <div
-            class="flex items-center gap-2 bg-[#F3F4F6FF] w-[23.375rem] h-11 rounded-2xl"
-          >
-            <i class="ml-2 fa-solid fa-magnifying-glass"></i>
-            <input
-              type="text"
-              name=""
-              class="border-none outline-none text-base w-full bg-[#F3F4F6FF]"
-              id="textbox"
-              placeholder="What would you like to cook?"
-            />
-          </div>
-        </div>
-        <div class="header-block-right">
-          <ul class="header-menu">
-            <li class="header-menu-item"><a href="">What to cook</a></li>
-            <li class="header-menu-item"><a href="">Recipes</a></li>
-            <li class="header-menu-item"><a href="">Ingredients</a></li>
-            <li class="header-menu-item"><a href="">Occasions</a></li>
-            <li class="header-menu-item"><a href="">About Us</a></li>
-          </ul>
-          <div class="header-actions">
-            <button class="header-actions-login">Login</button>
-            <button class="header-actions-subscribe">Subscribe</button>
+          <div class="header-block-right flex items-center gap-10">
+            <ul class="header-menu flex items-center gap-6 list-none">
+              <li class="header-menu-item">
+                <a
+                  class="text-[#565E6CFF] font-normal text-sm hover:text-[#636ae8ff]"
+                  href=""
+                  >What to cook</a
+                >
+              </li>
+              <li class="header-menu-item">
+                <a
+                  class="text-[#565E6CFF] font-normal text-sm hover:text-[#636ae8ff]"
+                  href=""
+                  >Recipes</a
+                >
+              </li>
+              <li class="header-menu-item">
+                <a
+                  class="text-[#565E6CFF] font-normal text-sm hover:text-[#636ae8ff]"
+                  href=""
+                  >Ingredients</a
+                >
+              </li>
+              <li class="header-menu-item">
+                <a
+                  class="text-[#565E6CFF] font-normal text-sm hover:text-[#636ae8ff]"
+                  href=""
+                  >Occasions</a
+                >
+              </li>
+              <li class="header-menu-item">
+                <a
+                  class="text-[#565E6CFF] font-normal text-sm hover:text-[#636ae8ff]"
+                  href=""
+                  >About Us</a
+                >
+              </li>
+            </ul>
+            <div class="header-actions flex items-center gap-2">
+              <button
+                class="header-actions-login h-11 px-4 primary-500 bg-[#F2F2FDFF] flex items-center justify-center rounded-2xl hover:bg-[#E0E1FAFF] active:bg-[#CED0F8FF]"
+              >
+                Login
+              </button>
+              <button
+                class="header-actions-subscribe h-11 px-4 text-white bg-[#636AE8FF] flex items-center justify-center rounded-2xl hover:bg-[#4850E4FF] active:bg-[#2C35E0FF]"
+              >
+                Subscribe
+              </button>
+            </div>
           </div>
         </div>
       </header>
       <section class="section-intro">
-        <div class="section-intro-bg">
-          <div class="container">
-            <div class="intro-content">
-              <p class="intro-content-label">Recipe of the day</p>
-              <h3 class="intro-content-title">Salad Caprese</h3>
-              <p class="intro-content-description">
-                Classic Italian Salad Caprese: ripe tomatoes, fresh mozzarella,
-                herbs, olive oil, and balsamic vinegar create a refreshing dish
-                for lunch or appetizer.
+        <div class="section-intro-bg relative">
+          <img
+            class="w-screen mt-20"
+            src="./assets/images/background-intro.jpg"
+            alt=""
+          />
+          <div
+            class="intro-content absolute top-[230px] left-[130px] w-[414px] h-[414px] flex flex-col items-center rounded-2xl border-2 border-[#EA916EFF] border-dashed bg-[#FFFFFFFF]"
+          >
+            <p
+              class="intro-content-label h-[36px] w-[230px] mt-[-20px] flex items-center justify-center text-white font-normal bg-[#22CCB2FF] rounded-md"
+            >
+              Recipe of the day
+            </p>
+            <h3
+              class="intro-content-title mt-16 primary-500 font-family-Archivo font-bold text-xl"
+            >
+              Salad Caprese
+            </h3>
+            <p
+              class="intro-content-description mt-3 w-[340px] text-center font-normal text-sm"
+            >
+              Classic Italian Salad Caprese: ripe tomatoes, fresh mozzarella,
+              herbs, olive oil, and balsamic vinegar create a refreshing dish
+              for lunch or appetizer.
+            </p>
+            <div class="intro-info-author mt-14 flex flex-col items-center">
+              <img
+                class="w-9 h-9 rounded-full bg-[#CED0F8FF]"
+                src="./assets/images/author-intro.jpg"
+                alt=""
+              />
+              <p class="intro-info-title mt-2 text-[#565E6CFF]">
+                Salad Caprese
               </p>
-              <div class="intro-info-author">
-                <img
-                  class="intro-info-avatar"
-                  src="./assets/images/author-intro.jpg"
-                  alt=""
-                />
-                <p class="intro-info-title">Salad Caprese</p>
-                <button class="intro-info-btn">
-                  View now
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M334.5 414c8.8 3.8 19 2 26-4.6l144-136c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22l0 72L32 192c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l288 0 0 72c0 9.6 5.7 18.2 14.5 22z"
-                    />
-                  </svg>
-                </button>
-              </div>
+              <button
+                class="intro-info-btn mt-6 flex justify-center items-center h-12 px-4 gap-2 bg-[#636AE8FF] text-[#FFFFFFFF] rounded-2xl"
+              >
+                View now
+                <i class="w-4 h-4 mt-1 fa-sharp fa-solid fa-right-long"></i>
+              </button>
             </div>
           </div>
         </div>
       </section>
-      <section class="category">
-        <div class="container">
-          <h2 class="category-title">This Summer Recipes</h2>
-          <p class="category-description">
-            We have all your Independence Day sweets covered.
-          </p>
-          <div class="category-list row-1">
-            <div class="category-item">
-              <img
-                src="./assets/images/card-image-1.jpg"
-                alt="Italian-style tomato salad"
-                class="card-image"
-              />
-              <div class="card-content">
-                <h3 class="card-title">Italian-style tomato salad</h3>
-                <button class="card-bookmark">
-                  <i class="fa-regular fa-bookmark"></i>
-                </button>
-              </div>
-              <p class="card-tag">14 minutes</p>
+      <section class="category container mx-auto p-16">
+        <h2
+          class="category-title mb-2 text-center font-family-Lora font-bold primary-500 text-[40px]"
+        >
+          This Summer Recipes
+        </h2>
+        <p
+          class="category-description mb-10 text-center text-xl text-[#171A1FFF]"
+        >
+          We have all your Independence Day sweets covered.
+        </p>
+        <div class="category-list grid grid-cols-4 gap-8">
+          <div
+            class="category-item flex flex-col gap-4 w-[270px] h-[292px] rounded-2xl border overflow-hidden"
+          >
+            <img
+              src="./assets/images/card-image-1.jpg"
+              alt="Italian-style tomato salad"
+              class="card-image w-full"
+            />
+            <div class="card-content flex justify-between px-4">
+              <h3
+                class="card-title grow shrink font-family-Archivo font-bold max-w-[197px] text-[#171A1FFF]"
+              >
+                Italian-style tomato salad
+              </h3>
+              <button
+                class="card-bookmark primary-500 border border-[#636AE8FF] w-9 h-9 rounded-full mt-[-7px]"
+              >
+                <i class="fa-regular fa-bookmark"></i>
+              </button>
             </div>
-            <div class="category-item">
-              <img
-                src="./assets/images/card-image-2.jpg"
-                alt="Italian-style tomato salad"
-                class="card-image"
-              />
-              <div class="card-content">
-                <h3 class="card-title">Spaghetti with vegetables and shrimp</h3>
-                <button class="card-bookmark">
-                  <i class="fa-regular fa-bookmark"></i>
-                </button>
-              </div>
-              <p class="card-tag">15 minutes</p>
+            <p
+              class="card-tag text-center mt-auto mb-4 ml-4 text-xs primary-500 py-1 px-2 bg-[#F2F2FDFF] w-max rounded-2xl"
+            >
+              14 minutes
+            </p>
+          </div>
+          <div
+            class="category-item flex flex-col gap-4 w-[270px] h-[292px] rounded-2xl border overflow-hidden"
+          >
+            <img
+              src="./assets/images/card-image-2.jpg"
+              alt="Italian-style tomato salad"
+              class="card-image w-full"
+            />
+            <div class="card-content flex justify-between px-4">
+              <h3
+                class="card-title grow shrink font-family-Archivo font-bold max-w-[197px] text-[#171A1FFF]"
+              >
+                Spaghetti with vegetables and shrimp
+              </h3>
+              <button
+                class="card-bookmark primary-500 border border-[#636AE8FF] w-9 h-9 rounded-full mt-[-7px]"
+              >
+                <i class="fa-regular fa-bookmark"></i>
+              </button>
             </div>
-            <div class="category-item">
-              <img
-                src="./assets/images/card-image-3.jpg"
-                alt="Italian-style tomato salad"
-                class="card-image"
-              />
-              <div class="card-content">
-                <h3 class="card-title">Lotus delight salad</h3>
-                <button class="card-bookmark">
-                  <i class="fa-regular fa-bookmark"></i>
-                </button>
-              </div>
-              <p class="card-tag">20 minutes</p>
+            <p
+              class="card-tag text-center mt-auto mb-4 ml-4 text-xs primary-500 py-1 px-2 bg-[#F2F2FDFF] w-max rounded-2xl"
+            >
+              15 minutes
+            </p>
+          </div>
+          <div
+            class="category-item flex flex-col gap-4 w-[270px] h-[292px] rounded-2xl border overflow-hidden"
+          >
+            <img
+              src="./assets/images/card-image-3.jpg"
+              alt="Italian-style tomato salad"
+              class="card-image w-full"
+            />
+            <div class="card-content flex justify-between px-4">
+              <h3
+                class="card-title grow shrink font-family-Archivo font-bold max-w-[197px] text-[#171A1FFF]"
+              >
+                Lotus delight salad
+              </h3>
+              <button
+                class="card-bookmark primary-500 border border-[#636AE8FF] w-9 h-9 rounded-full mt-[-7px]"
+              >
+                <i class="fa-regular fa-bookmark"></i>
+              </button>
             </div>
-            <div class="category-item">
-              <img
-                src="./assets/images/card-image-4.jpg"
-                alt="Italian-style tomato salad"
-                class="card-image"
-              />
-              <div class="card-content">
-                <h3 class="card-title">Snack cakes</h3>
-                <button class="card-bookmark">
-                  <i class="fa-regular fa-bookmark"></i>
-                </button>
-              </div>
-              <p class="card-tag">21 minutes</p>
+            <p
+              class="card-tag text-center mt-auto mb-4 ml-4 text-xs primary-500 py-1 px-2 bg-[#F2F2FDFF] w-max rounded-2xl"
+            >
+              20 minutes
+            </p>
+          </div>
+          <div
+            class="category-item flex flex-col gap-4 w-[270px] h-[292px] rounded-2xl border overflow-hidden"
+          >
+            <img
+              src="./assets/images/card-image-4.jpg"
+              alt="Italian-style tomato salad"
+              class="card-image w-full"
+            />
+            <div class="card-content flex justify-between px-4">
+              <h3
+                class="card-title grow shrink font-family-Archivo font-bold max-w-[197px] text-[#171A1FFF]"
+              >
+                Snack cakes
+              </h3>
+              <button
+                class="card-bookmark primary-500 border border-[#636AE8FF] w-9 h-9 rounded-full mt-[-7px]"
+              >
+                <i class="fa-regular fa-bookmark"></i>
+              </button>
             </div>
+            <p
+              class="card-tag text-center mt-auto mb-4 ml-4 text-xs primary-500 py-1 px-2 bg-[#F2F2FDFF] w-max rounded-2xl"
+            >
+              21 minutes
+            </p>
           </div>
         </div>
       </section>
@@ -419,7 +530,7 @@
         </div>
       </footer>
     </div>
-    <section class="modal-section">
+    <!-- <section class="modal-section">
       <form action="" method="" class="modal-login">
         <div class="modal-login-img">
           <p class="modal-login-img-description">
@@ -490,7 +601,7 @@
           alt=""
         />
       </div>
-    </section>
+    </section> -->
   </body>
   <script src="./js/main.js"></script>
 </html>
